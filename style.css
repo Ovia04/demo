@@ -1,0 +1,48 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin :20px;
+    padding :0 px;
+    background-color: black;
+}
+
+.container {
+    margin :auto;
+    max-width: 720px;
+    border-width: 2px solid white;
+    background-color: white;
+}
+
+img{
+ width : 100%;
+ transition : 0.5s ease-in-out;
+}
+
+img:hover{
+    transform :scale(1.05);
+}
+
+.imgs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap: 2px;
+}
+/* .imgs img {
+    width: 100px;
+    height: 100px;
+} */
+.fade-in{
+    animation: demo 0.6s ease-in forwards;
+}
+@keyframes demo {
+    from {
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
